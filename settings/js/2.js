@@ -1714,7 +1714,8 @@ var render = function() {
     "ul",
     _vm._l(_vm.menu, function(item, key) {
       return _c("popover-item", { key: key, attrs: { item: item } })
-    })
+    }),
+    1
   )
 }
 var staticRenderFns = []

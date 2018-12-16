@@ -1348,6 +1348,11 @@ var render = function() {
                     version: _vm.app.update
                   }),
                   disabled: _vm.installing || _vm.loading(_vm.app.id)
+                },
+                on: {
+                  click: function($event) {
+                    _vm.update(_vm.app.id)
+                  }
                 }
               })
             : _vm._e(),
@@ -1661,7 +1666,8 @@ var render = function() {
                 { staticClass: "missing-dependencies" },
                 _vm._l(_vm.app.missingDependencies, function(dep) {
                   return _c("li", [_vm._v(_vm._s(dep))])
-                })
+                }),
+                0
               )
             ])
           : _vm._e()
@@ -1721,7 +1727,8 @@ var render = function() {
                     key: app.id,
                     attrs: { app: app, category: _vm.category }
                   })
-                })
+                }),
+                1
               )
             ]
           : _vm._e(),

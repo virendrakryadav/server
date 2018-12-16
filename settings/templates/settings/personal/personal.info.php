@@ -98,6 +98,7 @@ vendor_style('jcrop/css/jquery.Jcrop');
 				<progress value="<?php p($_['usage_relative']); ?>" max="100"<?php if($_['usage_relative'] > 80): ?> class="warn" <?php endif; ?>></progress>
 			</div>
 		</div>
+		<?php include __DIR__ . '/partials/where-is-your-data.php' ?>
 	</div>
 
 	<div class="personal-settings-container">
@@ -378,9 +379,4 @@ vendor_style('jcrop/css/jquery.Jcrop');
 		</div>
 		<span class="msg"></span>
 	</div>
-
-	<div id="personal-settings-group-container">
-
-	</div>
-
 </div>
