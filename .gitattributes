@@ -1,2 +1,5 @@
 /core/js/dist/*.js binary
 /core/js/dist/*.js.map binary
+
+/apps/twofactor_backupcodes/js/*.js binary
+/apps/twofactor_backupcodes/js/*.js.map binary
