@@ -21,7 +21,6 @@
 
 // TODO: not required anymore https://caniuse.com/#search=atob
 import 'Base64'
-// TODO: use babel polyfill instead
-import 'es6-shim'
+import '@babel/polyfill'
 
 import './globals'
