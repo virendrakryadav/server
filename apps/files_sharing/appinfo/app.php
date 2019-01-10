@@ -44,6 +44,8 @@ $eventDispatcher->addListener(
 	function() {
 		\OCP\Util::addStyle('files_sharing', 'mergedAdditionalStyles');
 		\OCP\Util::addScript('files_sharing', 'additionalScripts');
+		\OCP\Util::addScript('files_sharing', 'files_sharing');
+
 	}
 );
 
